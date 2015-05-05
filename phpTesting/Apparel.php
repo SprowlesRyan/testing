@@ -1,14 +1,15 @@
 <?php
 include_once "product.php";
 
-class Apparel{
+class Apparel extends  product{
 
  private $size;
  private $color;
 
- function __construct($size, $color){
+ function __construct($size, $color, $id, $price){
   $this->size = $size;
   $this->color = $color;
+  parent::__construct($id, $price);
  }
 
  // function showApparel(){

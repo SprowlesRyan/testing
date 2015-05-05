@@ -1,14 +1,15 @@
 <?php
 include_once "product.php";
 
-class Books{
+class Books extends  product{
 
  private $numPages;
  private $author;
 
- function __construct($numPages, $author){
+ function __construct($numPages, $author, $id, $price){
   $this->numPages = $numPages;
   $this->author = $author;
+  parent::__construct($id, $price);
  }
 
  //  function showPages(){

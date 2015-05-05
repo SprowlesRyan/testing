@@ -1,12 +1,13 @@
 <?php
 include_once "Apparel.php";
 
-class Jeans{
+class Jeans extends Apparel{
 
  private $numPockets;
 
- function __construct($numPockets){
+ function __construct($numPockets, $size, $color, $id, $price){
   $this->numPockets = $numPockets;
+  parent::__construct($size, $color, $id, $price);
  }
 
  //  function showPockets(){

@@ -12,6 +12,18 @@ class product {
     function sale ($percent){
         echo $this->price = $this->price - ($this->price * ($percent/100)) . '</br>';
     }
+    public function getId(){
+        return $this->id;
+    }
+    public function setId($id){
+        return $this->id =$id;
+}
+    public function getPrice(){
+        return $this->price;
+    }
+    public function setPrice($price){
+        return $this->price = $price;
+    }
 
 }
 
